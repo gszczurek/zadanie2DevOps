@@ -20,7 +20,7 @@ jobs:
 
     strategy:
       matrix:
-        java-version: ["17", "21"]
+        java-version: ["17", "19"]
 
     steps:
       - name: Checkout repo
