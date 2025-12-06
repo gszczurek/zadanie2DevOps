@@ -51,5 +51,5 @@ jobs:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: |
           curl -X POST -H "Content-Type: application/json" \
-             -d '{"content": "❌ Build failed in CI for Java version '${{ matrix.java-version }}'!"}' \
+             -d '{"content": "Build failed in CI for Java version '${{ matrix.java-version }}'!"}' \
              $WEBHOOK_URL
